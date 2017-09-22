@@ -1,18 +1,48 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+// @flow
+
+import React from 'react';
 import './App.css';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div className="app">
+        <div className="hv-wrapper">
+          <div className="hv-item">
+            <div className="hv-item-parent">
+              <p className="simple-card"> Parent </p>
+            </div>
+            <div className="hv-item-children">
+              <div className="hv-item-child">
+                <div className="hv-item">
+                  <div className="hv-item-parent">
+                    <p className="simple-card"> Parent </p>
+                  </div>
+
+                  <div className="hv-item-children">
+                    <div className="hv-item-child">
+                      <p className="simple-card"> Child 1 </p>
+                    </div>
+
+                    <div className="hv-item-child">
+                      <p className="simple-card"> Child 2 </p>
+                    </div>
+
+                    <div className="hv-item-child">
+                      <p className="simple-card"> Child 2 </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="hv-item-child">
+                <p className="simple-card"> Child 2 </p>
+              </div>
+              <div className="hv-item-child">
+                <p className="simple-card"> Child 3 </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
