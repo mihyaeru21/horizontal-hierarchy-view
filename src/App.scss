@@ -19,12 +19,12 @@ $bg-color: #EFE6E2;
 .hv-wrapper {
   display: flex;
 
-  .hv-item {
+  .hv-node {
     display: flex;
     flex-direction: row;
     margin: auto;
 
-    .hv-item-parent {
+    .hv-node-parent {
       margin-right: $right-margin;
       position: relative;
       display: flex;
@@ -42,12 +42,12 @@ $bg-color: #EFE6E2;
       }
     }
 
-    .hv-item-children {
+    .hv-node-children {
       display: flex;
       flex-direction: column;
       justify-content: center;
 
-      .hv-item-child {
+      .hv-node-child {
         padding: 8px 0;
         position: relative;
 
@@ -78,6 +78,10 @@ $bg-color: #EFE6E2;
 
         &:last-child:after {
           height: calc(50% + 1px);
+        }
+
+        &:only-child:after {
+          content: none;
         }
       }
     }

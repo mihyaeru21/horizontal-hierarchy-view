@@ -11,17 +11,17 @@
 
 .hv-wrapper {
   display: flex; }
-  .hv-wrapper .hv-item {
+  .hv-wrapper .hv-node {
     display: flex;
     flex-direction: row;
     margin: auto; }
-    .hv-wrapper .hv-item .hv-item-parent {
+    .hv-wrapper .hv-node .hv-node-parent {
       margin-right: 30px;
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center; }
-      .hv-wrapper .hv-item .hv-item-parent:after {
+      .hv-wrapper .hv-node .hv-node-parent:after {
         position: absolute;
         content: '';
         width: 15px;
@@ -29,29 +29,31 @@
         top: 50%;
         right: -15px;
         background-color: rgba(255, 255, 255, 0.7); }
-    .hv-wrapper .hv-item .hv-item-children {
+    .hv-wrapper .hv-node .hv-node-children {
       display: flex;
       flex-direction: column;
       justify-content: center; }
-      .hv-wrapper .hv-item .hv-item-children .hv-item-child {
+      .hv-wrapper .hv-node .hv-node-children .hv-node-child {
         padding: 8px 0;
         position: relative; }
-        .hv-wrapper .hv-item .hv-item-children .hv-item-child:before, .hv-wrapper .hv-item .hv-item-children .hv-item-child:after {
+        .hv-wrapper .hv-node .hv-node-children .hv-node-child:before, .hv-wrapper .hv-node .hv-node-children .hv-node-child:after {
           content: '';
           position: absolute;
           background-color: rgba(255, 255, 255, 0.7); }
-        .hv-wrapper .hv-item .hv-item-children .hv-item-child:before {
+        .hv-wrapper .hv-node .hv-node-children .hv-node-child:before {
           left: -15px;
           top: 50%;
           width: 15px;
           height: 2px; }
-        .hv-wrapper .hv-item .hv-item-children .hv-item-child:after {
+        .hv-wrapper .hv-node .hv-node-children .hv-node-child:after {
           left: -15px;
           top: 0;
           width: 2px;
           height: 100%; }
-        .hv-wrapper .hv-item .hv-item-children .hv-item-child:first-child:after {
+        .hv-wrapper .hv-node .hv-node-children .hv-node-child:first-child:after {
           top: 50%;
           height: 50%; }
-        .hv-wrapper .hv-item .hv-item-children .hv-item-child:last-child:after {
+        .hv-wrapper .hv-node .hv-node-children .hv-node-child:last-child:after {
           height: calc(50% + 1px); }
+        .hv-wrapper .hv-node .hv-node-children .hv-node-child:only-child:after {
+          content: none; }
