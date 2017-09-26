@@ -16,7 +16,7 @@ class App extends React.Component {
               <div className="hv-item-child">
                 <div className="hv-item">
                   <div className="hv-item-parent">
-                    <p className="simple-card"> Parent </p>
+                    <p className="simple-card"> Prent </p>
                   </div>
 
                   <div className="hv-item-children">
@@ -25,7 +25,7 @@ class App extends React.Component {
                     </div>
 
                     <div className="hv-item-child">
-                      <p className="simple-card"> Child 2 </p>
+                      <p className="simple-card"> Child 2</p>
                     </div>
 
                     <div className="hv-item-child">
@@ -35,10 +35,14 @@ class App extends React.Component {
                 </div>
               </div>
               <div className="hv-item-child">
-                <p className="simple-card"> Child 2 </p>
+                <div className="hv-item">
+                  <p className="simple-card"> Child 2 </p>
+                </div>
               </div>
               <div className="hv-item-child">
-                <p className="simple-card"> Child 3 </p>
+                <div className="hv-item">
+                  <p className="simple-card"> Child 3 </p>
+                </div>
               </div>
             </div>
           </div>
